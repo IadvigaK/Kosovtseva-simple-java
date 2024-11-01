@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main
+{
+  public static void func1(int a, int b) {
+    if (a > b) System.out.println("a > b");
+    else if (a == b) System.out.println("a = b");
+    else System.out.println("a < b");
+  }
+  public static int sum (int a, int b) {
+      return a+b;
+  }
+  public static int minus (int a, int b) {
+      return a-b;
+  }
+  public static int func2 (int a, int b) {
+      return a*b;
+  }
+  public static int func3 (int a, int b) {
+      return a/b;
+  }
+  public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        func1(x,y);
+        System.out.println(sum(x,y));
+        System.out.println(minus(x,y));
+        System.out.println(func2(x,y));
+        System.out.println(func3(x,y));
+    }
+}
